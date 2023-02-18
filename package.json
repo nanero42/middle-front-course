@@ -4,7 +4,7 @@
   "description": "webpack 5 course",
   "private": true,
   "scripts": {
-    "lint": "eslint '**/*.js'",
+    "lint": "eslint '**/*.ts'",
     "start": "npx webpack serve --config webpack.config.dev.js",
     "build": "npx webpack --config webpack.config.prod.js",
     "build:dev": "npx webpack --config webpack.config.dev.js"
@@ -16,6 +16,9 @@
   "author": "vladilen",
   "license": "ISC",
   "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.2",
     "css-minimizer-webpack-plugin": "^4.2.2",

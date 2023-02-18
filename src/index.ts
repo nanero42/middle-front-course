@@ -1,4 +1,4 @@
-export interface ImgsUrls {
+export interface ImgUrls {
   sun: string;
   rain: string;
   winter: string;
@@ -20,13 +20,14 @@ const summerImgUrl: string =  require('./assets/img/summer-bg.jpg');
 const rainImgUrl: string =  require('./assets/img/rainy-bg.jpg');
 const winterImgUrl: string =  require('./assets/img/winter-bg.jpg');
 
+
 const audio: Audio = {
   sun: new Audio(summerMp3),
   rain: new Audio(rainMp3),
   winter: new Audio(winterMp3),
 }
 
-const imgsUrls: ImgsUrls = {
+const imgsUrls: ImgUrls = {
   sun: summerImgUrl,
   rain: rainImgUrl,
   winter: winterImgUrl,
@@ -48,7 +49,7 @@ audioRangeEl.addEventListener('input', (e: Event) => {
 cards.forEach(c => {
   c.addEventListener('click', (e: Event) => {
     const id = (e?.target as HTMLLIElement).id;
-    const currentBg = imgsUrls[id as keyof ImgsUrls].replace('http://localhost:3000/', '');
+    const currentBg = imgsUrls[id as keyof ImgUrls].replace('http://localhost:3000/', '');
     const bgImageEl = document.getElementById('bg-image') as HTMLDivElement;
 
     bgImageEl.style.backgroundImage = 'url(' + currentBg + ')';
