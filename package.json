@@ -4,7 +4,7 @@
   "description": "webpack 5 course",
   "private": true,
   "scripts": {
-    "lint": "eslint '**/*.ts'",
+    "lint": "eslint \"@(src)/**/*.@(ts)\" --cache --cache-location \"./.eslint-cache/\"",
     "start": "npx webpack serve --config webpack.config.dev.js",
     "build": "npx webpack --config webpack.config.prod.js",
     "build:dev": "npx webpack --config webpack.config.dev.js"

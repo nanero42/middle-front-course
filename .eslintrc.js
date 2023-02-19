@@ -1,27 +1,15 @@
 module.exports = {
-  "parser": "@typescript-eslint/parser",
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-  ],
-    "env": {
-        "browser": true,
-        "commonjs": true,
-        "es2021": true,
-        "node": true,
+    env: {
+      browser: true,
+      es2021: true,
     },
-    "extends": "eslint:recommended",
-    "overrides": [
-    ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+    overrides: [],
+    parserOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
     },
-    "rules": {
+    rules: {
+      'no-unused-vars': 0,
     },
-    "globals": {
-        "module": "readonly",
-        "import": "readonly",
-    }
-}
+  }
+  

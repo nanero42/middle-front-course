@@ -4,6 +4,8 @@
 /node_modules
 /trash
 /.pnp
+/.eslint-cache
+/.idea
 .pnp.js
 
 # testing
