@@ -7,7 +7,8 @@
     "lint": "eslint \"@(src)/**/*.@(ts)\" --cache --cache-location \"./.eslint-cache/\"",
     "start": "npx webpack serve --config webpack.config.dev.js",
     "build": "npx webpack --config webpack.config.prod.js",
-    "build:dev": "npx webpack --config webpack.config.dev.js"
+    "build:dev": "npx webpack --config webpack.config.dev.js",
+    "total": "tsc && node dist/totalPrice"
   },
   "keywords": [
     "webpack",
