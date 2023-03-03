@@ -8,7 +8,9 @@
     "start": "npx webpack serve --config webpack.config.dev.js",
     "build": "npx webpack --config webpack.config.prod.js",
     "build:dev": "npx webpack --config webpack.config.dev.js",
-    "url": "tsc && node dist/url"
+    "url": "tsc && node dist/url",
+    "normalize": "tsc && node dist/normalize",
+    "total": "tsc && node dist/totalPrice"
   },
   "keywords": [
     "webpack",
