@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 let index = 0;
 
@@ -32,7 +32,7 @@ export function useToggle(args: string[] | null): [string, Function] {
     }
 
     setValue(args[++index]);
-  }
+  };
 
   return [value.toString(), toggle];
 }
