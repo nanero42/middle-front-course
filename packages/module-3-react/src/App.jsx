@@ -1,10 +1,10 @@
 import React from 'react';
-import { UseLocalStorage } from './components';
+import { UseHover } from './components';
 
 export function App() {
   return (
     <div className="App">
-      <UseLocalStorage />
+      <UseHover />
     </div>
   )
 }
