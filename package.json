@@ -11,7 +11,7 @@
     "packages/*"
   ],
   "scripts": {
-    "lint-m3": "cd packages/module-3-react && eslint \"@(src)/**/*.@(tsx|ts)\" --cache --cache-location \"./.eslint-cache/\"",
+    "lint-m3": "cd packages/module-3-react && eslint --max-warnings=0 \"@(src)/**/*.@(tsx|ts)\" --cache --cache-location \"./.eslint-cache/\"",
     "start-m3": "cd packages/module-3-react && react-scripts start"
   }
 }
