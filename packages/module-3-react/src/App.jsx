@@ -1,10 +1,10 @@
 import React from 'react';
-import { UseHover } from './components';
+import { UseViewportSize } from './components';
 
 export function App() {
   return (
     <div className="App">
-      <UseHover />
+      <UseViewportSize />
     </div>
   )
 }
