@@ -1,0 +1,17 @@
+{
+  "name": "middle-front-course",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^6.5.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "cd packages/module-1-2 && eslint \"@(src)/**/*.@(ts)\" --cache --cache-location \"./.eslint-cache/\"",
+    "start-m3": "cd packages/module-3-react && react-scripts start"
+  }
+}
