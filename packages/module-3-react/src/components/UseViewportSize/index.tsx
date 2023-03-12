@@ -13,4 +13,16 @@ export function UseViewportSize() {
       {height}
     </>
   );
+
+  // import { useViewportSize } from '@mantine/hooks';
+
+  // function Demo() {
+  //   const { height, width } = useViewportSize();
+
+  //   return (
+  //     <>
+  //       Width: {width}, height: {height}
+  //     </>
+  //   );
+  // }
 }
