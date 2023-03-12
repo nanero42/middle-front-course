@@ -1,0 +1,6 @@
+.sticky {
+  position: sticky;
+  width: 100vw;
+  left: 0;
+  top: 0;
+}
